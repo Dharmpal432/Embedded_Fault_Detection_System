@@ -127,7 +127,7 @@ The project was developed and tested using Wokwi.
  
   ![fault Condition](Images/fault-condition.png)
 
-Project Files:-
+## Project Files:-
 
 Embedded_Fault_Detection_System
 │

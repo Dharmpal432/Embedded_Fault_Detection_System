@@ -128,7 +128,7 @@ The project was developed and tested using Wokwi.
   ![fault Condition](Images/fault-condition.png)
 
 ## Project Files:-
-
+```text
 Embedded_Fault_Detection_System
 │
 ├── Images
@@ -139,7 +139,7 @@ Embedded_Fault_Detection_System
 ├── sketch.ino
 ├── diagram.json
 └── wokwi-project.txt
-
+```
 ## Code Explanation
 The program first configures the input and output pins.
 pinMode(BUTTON_PIN, INPUT_PULLUP);

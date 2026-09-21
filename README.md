@@ -52,6 +52,8 @@ The push button acts as a simulated fault signal.
         🔊 Buzzer       🔊 Buzzer
            OFF             ON
 
+```
+
  Normal Condition
 When the button is not pressed:
 Button state = HIGH
@@ -70,7 +72,7 @@ The Arduino uses the internal pull-up resistor with:
                         pinMode(BUTTON_PIN, INPUT_PULLUP);
 Therefore, the button reads HIGH normally and LOW when pressed.
 
-Component
+## Component
 
 | Component      | Purpose                      |
 | -------------- | ---------------------------- |
@@ -81,7 +83,7 @@ Component
 | Buzzer         | Provides audible fault alert |
 | 220Ω Resistors | Limit LED current            |
 
-Pin Configuration
+## Pin Configuration
 
 | Component   | Arduino Nano Pin |
 | ----------- | ---------------- |
@@ -90,7 +92,7 @@ Pin Configuration
 | Red LED     | D9               |
 | Buzzer      | D10              |
 
-System Logic
+## System Logic
 The basic decision logic is:
 Button NOT pressed
        ↓
@@ -109,11 +111,21 @@ Green LED OFF
 Red LED ON
 Buzzer ON
 
-Simulation
+## Simulation
 The project was developed and tested using Wokwi.
-Circuit
-Normal Condition
-Fault Condition
+
+### Circuit
+
+![Cricuit](Images/circuit.png)
+
+
+### Normal Condition
+
+![Normal Condition](Images/normal-condition.png)
+
+### Fault Condition
+ 
+  ![fault Condition](Images/fault-condition.png)
 
 Project Files:-
 
@@ -128,7 +140,7 @@ Embedded_Fault_Detection_System
 ├── diagram.json
 └── wokwi-project.txt
 
-Code Explanation
+## Code Explanation
 The program first configures the input and output pins.
 pinMode(BUTTON_PIN, INPUT_PULLUP);
 
@@ -147,14 +159,14 @@ If the button is pressed, the system enters the fault state:
 }
 Otherwise, the system remains in the normal state.
 
-Current Limitations
+## Current Limitations
 The project is currently a Wokwi simulation.
 The push button represents a simulated fault signal.
 No physical machine is connected.
 No real temperature, vibration, current, or voltage sensor is currently used.
 The system currently detects only one simulated fault condition.
 
-Future Improvements:-
+## Future Improvements:-
 The project can be upgraded to a real hardware fault detection system by replacing the push button with appropriate sensors.
 Possible improvements include:
 🌡️ Temperature sensor for overheating detection
@@ -167,7 +179,7 @@ Possible improvements include:
 🔔 Improved alarm and notification system
 🔧 Real machine hardware testing
 
-Technologies Used
+## Technologies Used
 Arduino Nano
 Embedded C / Arduino C++
 Wokwi
@@ -176,7 +188,7 @@ Internal Pull-Up Resistor
 LED Indicators
 Buzzer
 
-Development Stages:-
+## Development Stages:-
 Stage 1 → Concept Design
           ↓
 Stage 2 → Wokwi Circuit Simulation
@@ -189,7 +201,7 @@ Stage 5 → GitHub Documentation
           ↓
 Future → Real Hardware Implementation
 
-Author
+## Author
 Dharmpal Pawar
 Electronics & Telecommunication Engineering Student
 

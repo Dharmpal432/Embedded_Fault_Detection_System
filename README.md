@@ -189,6 +189,7 @@ LED Indicators
 Buzzer
 
 ## Development Stages:-
+```text
 Stage 1 → Concept Design
           ↓
 Stage 2 → Wokwi Circuit Simulation
@@ -200,7 +201,7 @@ Stage 4 → Normal/Fault Indicators
 Stage 5 → GitHub Documentation
           ↓
 Future → Real Hardware Implementation
-
+```
 ## Author
 Dharmpal Pawar
 Electronics & Telecommunication Engineering Student
